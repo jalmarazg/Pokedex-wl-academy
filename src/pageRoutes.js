@@ -1,10 +1,10 @@
-import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import React from 'react'
+import { Switch, Route, Redirect } from 'react-router-dom'
 import { Home, Contact } from './pages'
 import { CONTACT, HOME } from './Routes'
 
 const PageRoutes = () => {
-  return(
+  return (
     <Switch>
       <Route
         path={HOME}

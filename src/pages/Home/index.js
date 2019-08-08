@@ -3,9 +3,9 @@ import React from 'react'
 const Home = () => {
   return (
     <div>
-        <p>
+      <p>
           Home de Aplicacion de Pokedex
-        </p>
+      </p>
     </div>
   )
 }

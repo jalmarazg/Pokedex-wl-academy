@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Index = () => {
+const Contact = () => {
   return (
     <div>
-        <p>
+      <p>
           Informacion de contacto
-        </p>
+      </p>
     </div>
   )
 }
 
-export default Index
+export default Contact

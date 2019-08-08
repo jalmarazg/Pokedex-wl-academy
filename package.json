@@ -12,7 +12,10 @@
     "build": "webpack --watch --mode development",
     "dev-server": "webpack-dev-server",
     "serve": "live-server public/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:js": "standard --fix",
+    "lint:css": "stylelint './src/**/*.js'",
+    "lint": "yarn lint:js && yarn lint:css"
   },
   "standard": {
     "parser": "babel-eslint",
