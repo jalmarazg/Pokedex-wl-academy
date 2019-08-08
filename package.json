@@ -6,19 +6,13 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1"
+    "styled-components": "^4.3.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint:js": "standard --fix",
-    "lint:css": "stylelint './src/**/*.js'",
-    "lint": "yarn lint:js && yarn lint:css"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "build": "webpack --watch --mode development",
+    "dev-server": "webpack-dev-server",
+    "serve": "live-server public/",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "standard": {
     "parser": "babel-eslint",
@@ -41,10 +35,20 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.2",
+    "babel-loader": "^8.0.6",
+    "file-loader": "^4.2.0",
+    "live-server": "^1.2.1",
     "standard": "^13.1.0",
     "stylelint": "^10.1.0",
     "stylelint-config-standard": "^18.3.0",
     "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-processor-styled-components": "^1.8.0"
+    "stylelint-processor-styled-components": "^1.8.0",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
   }
 }
