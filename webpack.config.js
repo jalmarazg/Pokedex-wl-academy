@@ -1,4 +1,5 @@
 const path = require('path')
+const Dotenv = require('dotenv-webpack')
 
 module.exports = {
   entry: './src/index.js',
@@ -6,12 +7,25 @@ module.exports = {
     path: path.join(__dirname, 'public'),
     filename: 'bundle.js'
   },
+  plugins: [
+    new Dotenv()
+  ],
   module: {
     rules: [
       {
         loader: 'babel-loader',
         test: /\.js$/,
-        exclude: /node-modules/
+        exclude: /node-modules/,
+        options: {
+          presets: [
+            '@babel/preset-env',
+            {
+              plugins: [
+                '@babel/plugin-proposal-class-properties'
+              ]
+            }
+          ]
+        }
       },
       {
         test: /\.(eot|woff|ttf|svg|png|jpg)$/,
@@ -21,6 +35,7 @@ module.exports = {
   },
   devServer: {
     contentBase: path.join(__dirname, '/public'),
-    historyApiFallback: true
+    historyApiFallback: true,
+    headers: { 'Access-Control-Allow-Origin': '*' }
   }
 }
