@@ -1,68 +1,84 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+<p align="center"><img width="50%" src="http://25.media.tumblr.com/8e4aafd22dfc23592ea2bf16f4f7be87/tumblr_mze2tugzvO1qh44dro1_500.gif">
+</p>
+  
+[![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components)
 
-## Available Scripts
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
+# React Pokedex
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Pokedex built with ReactJS for Wizeline Academy Course.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+In order to run this project locally, you'll need to have [Node 10.13.0](https://nodejs.org/fr/blog/release/v10.13.0/) and [Yarn](https://yarnpkg.com/lang/en/) installed on your computer.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+After installing both tools, open a commando line window and enter the following:
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+To check that Node was installed correctly, run:
+```
+node -v
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To check that Yarn was installed correctly, run:
+```
+yarn -v
+```
 
-### `npm run eject`
+### Installing
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To install the project locally, you'll have to configure the Backend repository first in order to make the project work correctly.
+Once everything is configured, follow the next steps:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ - Download repository by cloning the repo on your local machine
+ - Once on your machine, open a terminal/command line on the project folder and execute the following command:
+	```
+	cp .env.example .env
+	```
+- In order to use all the libraries for the project execute the following command to download the necessary tools:
+	```
+	yarn
+	```
+- To run the project on the browser, execute the following command, once started, website such be displayed on `http://localhost:8080`
+	```
+	yarn run dev-server
+	```
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Lint
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+If code is not lint (on Javascript or Styles) you can run the following command on the Terminal/Command Line to order the code styling: 
 
-## Learn More
+For Javascript files:
+```
+yarn lint:js
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+For Styles files:
+```
+yarn lint:css
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Built With
 
-### Code Splitting
+* [React](https://es.reactjs.org/) - JS library to create user interfaces
+* [Styled-Components](https://www.styled-components.com/) - CSS to Javascript styles
+* [React-Router](https://reacttraining.com/react-router/web/) - Collection of  navigational components that compose declaratively with applications
+* [React-Redux](https://redux.js.org/) - Predictable state container for JavaScript apps.
+* [Webpack](https://webpack.js.org/) - Static module bundler for modern JavaScript applications
+* [Dotenv](https://www.npmjs.com/package/dotenv) - Zero-dependency module that loads environment variables from a .env file into process.env
+* [StandardJS](https://standardjs.com/) - JavaScript style guide, linter, and formatter
+* [Stylelint](https://stylelint.io/) - A mighty, modern linter that helps you avoid errors and enforce conventions in your styles
+* [Lodash](https://lodash.com/) - A JavaScript utility library delivering consistency, modularity, performance, & extras
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Authors
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* **Jose Almaraz** - *Frontend Developer* - [jalmarazg](https://github.com/jalmarazg)
+* **Ruben Saucedo** - *Frontend Developer* - [RubenSaucedo](https://github.com/RubenSaucedo)
+* **Angel Martinez** - *Backend Developer* - [miickeyreyez](https://github.com/miickeyreyez)
