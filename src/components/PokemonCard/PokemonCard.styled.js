@@ -8,7 +8,7 @@ export const PokemonCardWrapper = styled.div`
   border-radius: 0 30px;
   border: 1px solid navy;
   width: 300px;
-  height: auto;
+  height: 350px;
   display: flex;
   align-items: center;
   margin: 8px;
