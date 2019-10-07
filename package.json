@@ -12,6 +12,7 @@
     "react-dom": "^16.8.6",
     "react-reveal-text": "^0.1.1",
     "react-router-dom": "^5.0.1",
+    "react-ui-cards": "^2.0.0",
     "styled-components": "^4.3.2"
   },
   "scripts": {
