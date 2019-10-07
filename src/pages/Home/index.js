@@ -16,6 +16,7 @@ class Home extends Component {
     const { pokemonData } = this.props
     return pokemonData.map(value =>
       <PokemonCard
+        key={index}
         englishName={value.name[0].english}
         idNumber={value.id}
         image={value.url_image}
