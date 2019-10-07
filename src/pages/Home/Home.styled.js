@@ -1,5 +1,18 @@
 import styled from 'styled-components'
 
+export const PokedexHomeWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+`
+
+export const ErrorMessage = styled.p`
+  color: firebrick;
+  font-size: 24px;
+  padding-top: 36px;
+`
+
 export const PokedexWrapper = styled.div`
   align-items: center;
   display: flex;
