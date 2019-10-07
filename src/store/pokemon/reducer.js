@@ -3,13 +3,13 @@ import { handleActions } from 'redux-actions'
 export const types = {
   POKEMON_DATA_REQUESTED: 'POKEMON_DATA_REQUESTED',
   POKEMON_DATA_SUCCEED: 'POKEMON_DATA_SUCCEED',
-  POKEMON_DATA_ERROR: 'POKEMON_DATA_ERROR',
+  POKEMON_DATA_ERROR: 'POKEMON_DATA_ERROR'
 }
 
 export const pokemonActions = {
   pokemonDataRequested: dispatch => (payload) => {
     dispatch({ type: types.POKEMON_DATA_REQUESTED, payload })
-  },
+  }
 }
 
 const initialState = {
@@ -31,11 +31,10 @@ export const pokemonActionsReducer = handleActions({
     return {
       ...state,
       isDataLoading: false,
-      isDataError: true,
+      isDataError: true
     }
-  },
+  }
 }, initialState)
-
 
 export const getPokemonData = (state) => state.pokemonActions.pokemonData
 export const getStatus = (state) => state.pokemonActions.isDataLoading

@@ -4,7 +4,7 @@ import PokemonData from '../../api/pokemon'
 
 export function * requestPokemons () {
   const pokemonResponse = yield call(PokemonData.pokemonData)
-  if(pokemonResponse) {
+  if (pokemonResponse) {
     yield put({ type: types.POKEMON_DATA_SUCCEED, payload: { pokemonResponse } })
   } else {
     yield put({ type: types.POKEMON_DATA_ERROR })
@@ -13,6 +13,6 @@ export function * requestPokemons () {
 
 export default function * pokemonFunctionsSaga () {
   yield all([
-    takeLatest(types.POKEMON_DATA_REQUESTED, requestPokemons),
+    takeLatest(types.POKEMON_DATA_REQUESTED, requestPokemons)
   ])
 }

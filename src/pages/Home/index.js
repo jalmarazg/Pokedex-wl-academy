@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import { isEmpty } from 'lodash'
 import { connect } from 'react-redux'
 import Loader from 'react-loader-spinner'
-// import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
 
 import PokemonCard from '../../components/PokemonCard'
 import { PokedexWrapper, HeaderWrapper, ImageWrapper, PokedexHomeWrapper, ErrorMessage } from './Home.styled.js'
@@ -39,7 +37,7 @@ class Home extends Component {
         </HeaderWrapper>
         {
           isLoading
-            ? <Loader type="BallTriangle" color={'#0000FF'} height={100} width={100} />
+            ? <Loader type='BallTriangle' color={'#0000FF'} height={100} width={100} />
             : isError
               ? <ErrorMessage> Hubo un error al procesar los datos. Intentalo mas tarde :c </ErrorMessage>
               : <PokedexWrapper> { this.generatePokemonCards() } </PokedexWrapper>
