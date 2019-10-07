@@ -16,7 +16,7 @@ export const NavigationStyle = styled.ul`
   width: 100%;
   float: left;
   padding: 0;
-  list-style: none
+  list-style: none;
 `
 
 export const NavigationOption = styled.li`
