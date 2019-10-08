@@ -14,7 +14,7 @@ class Home extends Component {
 
   generatePokemonCards = () => {
     const { pokemonData } = this.props
-    return pokemonData.map(value =>
+    return pokemonData.map((value, index) =>
       <PokemonCard
         key={index}
         englishName={value.name[0].english}

@@ -2,15 +2,10 @@ const path = require('path')
 const Dotenv = require('dotenv-webpack')
 
 module.exports = {
-  entry: {
-    js: ['babel-polyfill', './src/index.js'],
-    vendor: ['react']
-  },
+  entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[hash:8].js',
-    sourceMapFilename: '[name].[hash:8].map',
-    chunkFilename: '[id].[hash:8].js'
+    path: path.join(__dirname, 'public'),
+    filename: 'bundle.js'
   },
   plugins: [
     new Dotenv()
