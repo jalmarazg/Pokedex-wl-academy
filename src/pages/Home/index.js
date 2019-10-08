@@ -9,7 +9,7 @@ class Home extends Component {
 
   componentDidMount () {
     axios
-      .get(REACT_POKEMON_ENDPOINT_API)
+      .get(`${REACT_POKEMON_ENDPOINT_API}/pokemon/1`)
       .then((res) => {
         this.setState({ pokemonData: res.data.pokemon })
       })
